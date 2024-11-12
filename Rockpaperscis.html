@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata for character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page -->
     <title>Rock-Paper-Scissor</title>
+    
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="rockstyle.css">
-
 </head>
 <body>
+    <!-- Main heading of the game -->
     <h1>Rock Paper Scissors Game</h1>
+
+    <!-- Section for the player's choice options -->
     <div class="choices">
+        <!-- Rock choice with an image -->
         <div class="choice" id="rock">
-            <img src="images/rock.png">
+            <img src="images/rock.png" alt="Rock">
         </div>
+        
+        <!-- Paper choice with an image -->
         <div class="choice" id="paper">
-            <img src="images/paper.png">
+            <img src="images/paper.png" alt="Paper">
         </div>
+        
+        <!-- Scissors choice with an image -->
         <div class="choice" id="scissors">
-            <img src="images/scissors.png">
+            <img src="images/scissors.png" alt="Scissors">
         </div>
     </div>
 
-
-        <div class="score-board">
-            <div class="score">
-                <p id="user-score">0</p>
-                <p>You</p>
-            </div>
-            <div class="score">
-                <p id="comp-score">0</p>
-                <p>Comp</p>
-            </div>
+    <!-- Scoreboard to display user and computer scores -->
+    <div class="score-board">
+        <!-- Display for the user score -->
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
         </div>
+        
+        <!-- Display for the computer score -->
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+        </div>
+    </div>
+
+    <!-- Message container to show game status and prompts -->
     <div class="msg-container">
         <p id="msg">Play your move</p>
     </div>
-<script src="rock.js"></script>
 
-
-
-  
+    <!-- Link to external JavaScript file for game logic -->
+    <script src="rock.js"></script>
 </body>
 </html>
